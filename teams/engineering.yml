@@ -19,6 +19,7 @@ controls:
   scripts:
     - path: ../lib/macos/scripts/remove-zoom-artifacts.script.sh
     - path: ../lib/macos/scripts/set-timezone.script.sh
+    - path: ../lib/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
 team_settings:
   secrets:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"
