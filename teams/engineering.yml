@@ -16,12 +16,12 @@ queries:
 agent_options:
   path: ../lib/agent-options.yml
 controls:
+  macos_settings:
+   	custom_settings:
+      - path: ../lib/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
   scripts:
     - path: ../lib/macos/scripts/remove-zoom-artifacts.script.sh
-    - path: ../lib/macos/scripts/set-timezone.script.sh
-       macos_settings:
-      	custom_settings:
-          - path: ../lib/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
+    - path: ../lib/macos/scripts/set-timezone.script.sh     
 team_settings:
   secrets:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"
